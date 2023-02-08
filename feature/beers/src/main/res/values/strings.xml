@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Beer Box</string>
+    <string name="beer_box_title">Beer <b>Box</b></string>
+    <string name="fetch_beer">Fetch Beer</string>
+    <string name="hint_search">Search</string>
+
+    <!-- Adv -->
+    <string name="adb_title_text"><b>Weekend Offers</b></string>
+    <string name="adb_description_text">Free shipping on orders over 60€</string>
+
+    <!-- Texts -->
+    <string name="btn_more_info">MORE INFO</string>
+    <string name="no_results">Non ci sono birre qui.</string>
+</resources>

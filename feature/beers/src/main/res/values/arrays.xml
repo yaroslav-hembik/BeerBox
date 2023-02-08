@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filters">
+        <item>Blonde</item>
+        <item>Lager</item>
+        <item>Malts</item>
+        <item>Stouts &amp; Porters</item>
+        <item>IPAs</item>
+    </string-array>
+</resources>

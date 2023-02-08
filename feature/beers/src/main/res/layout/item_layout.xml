@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primaryColor"
+    android:paddingVertical="@dimen/xlarge">
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@null"
+        android:padding="4dp"
+        android:src="@drawable/ic_gift"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/gl_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_vertical"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvBeerName"
+        app:layout_constraintGuide_percent="0.15"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvBeerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_xlarge"
+        app:layout_constraintBottom_toTopOf="@id/tvBeerTagline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gl_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Sunk Punk" />
+
+    <TextView
+        android:id="@+id/tvBeerTagline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_xmedium"
+        app:layout_constraintBottom_toTopOf="@id/tvBeerDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvBeerName"
+        app:layout_constraintTop_toBottomOf="@+id/tvBeerName"
+        tools:text="Ocean Fermented Lager" />
+
+    <TextView
+        android:id="@+id/tvBeerDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/xmedium"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="@dimen/text_xmedium"
+        app:layout_constraintBottom_toTopOf="@id/btn_deatils"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvBeerName"
+        app:layout_constraintTop_toBottomOf="@+id/tvBeerTagline"
+        tools:text="It's rumoured just a drop can calm the fiercest of storms. A balance of sweet.." />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_deatils"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small"
+        android:backgroundTint="@color/primaryColor"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/btn_more_info"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/secondaryColor"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/tvBeerName"
+        app:layout_constraintTop_toBottomOf="@id/tvBeerDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

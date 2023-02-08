@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small">4dp</dimen>
+    <dimen name="medium">8dp</dimen>
+    <dimen name="xmedium">10dp</dimen>
+    <dimen name="large">16dp</dimen>
+    <dimen name="xlarge">18dp</dimen>
+    <dimen name="xylarge">24dp</dimen>
+    <dimen name="xxlarge">32dp</dimen>
+    <dimen name="corner_radius">10dp</dimen>
+
+    <!-- Text sizes -->
+    <dimen name="title">25sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_ymedium">15sp</dimen>
+    <dimen name="text_xmedium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_xlarge">20sp</dimen>
+    <dimen name="text_xxlarge">22sp</dimen>
+</resources>
